@@ -114,6 +114,9 @@ Open http://localhost:8080
 
 - The image installs espeak-ng and ffmpeg so local TTS works out of the box.
 - You can switch to gcp or azure TTS by setting the env vars below.
+## .env file
+- REACT_APP_ADOBE_EMBED_CLIENT_ID=cebba3120472436fa9c7bdec9a3ff7ca
+
 
 ## Local Development (optional)
 - # Backend
