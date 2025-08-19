@@ -1,0 +1,39 @@
+# --- Web server ---
+flask
+flask-cors
+gunicorn
+python-dotenv
+requests
+
+# --- Google GenAI (AI Studio path) ---
+google-generativeai
+
+# --- Vertex AI (service account JSON path) ---
+google-cloud-aiplatform
+vertexai
+
+# --- Google TTS fallback ---
+google-cloud-texttospeech
+
+# --- Azure TTS (Cognitive Speech SDK) ---
+azure-cognitiveservices-speech
+
+# --- Azure OpenAI (AOAI) TTS ---
+openai>=1.42.0
+
+# --- Audio utils ---
+pydub
+
+# --- PDF + OCR ---
+pymupdf==1.24.9
+pytesseract==0.3.10
+Pillow
+
+# --- ML helpers ---
+scikit-learn==1.5.1
+
+# --- LangChain integrations ---
+langchain
+langchain-openai
+langchain-google-genai
+langchain-community

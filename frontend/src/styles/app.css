@@ -1,0 +1,369 @@
+/* -----------------------------
+   Root + light palette
+---------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+:root{
+  /* Accent gradient (violet → pink) */
+  --accent-from:#7c3aed;
+  --accent-to:#ec4899;
+
+  /* Text & panel tones on dark photo */
+  --ink:#e9ecf5;
+  --muted:#b8c0d9;
+  --glass: rgba(8, 11, 22, .45);
+  --glass-strong: rgba(8, 11, 22, .65);
+  --stroke: rgba(255,255,255,.08);
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height:100%; }
+body {
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  color: var(--ink);
+  background:
+    linear-gradient(180deg, rgba(5,8,16,.75), rgba(5,8,16,.85)),
+    url("../assets/library-bg.jpg") center / cover no-repeat fixed;
+}
+
+/* -------- Nav (glass bar) -------- */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--stroke);
+}
+.nav__inner{
+  height: 68px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 22px;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:var(--ink);
+  font-weight:700;
+  letter-spacing:.2px;
+}
+.brand__badge{
+  display:inline-grid;
+  place-items:center;
+  width:34px; height:34px;
+  border-radius:50%;
+  color:white;
+  background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+  font-weight:800;
+}
+.brand__name{ font-size:18px; }
+.nav__right{ display:flex; align-items:center; gap:8px; }
+
+.status-pill{
+  font-weight:700;
+  font-size:12px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid var(--stroke);
+  background: var(--glass-strong);
+  color: var(--muted);
+}
+.status-ok{ color:#b5f5c6; border-color: rgba(16,185,129,.35); }
+.status-fail{ color:#fecaca; border-color: rgba(239,68,68,.35); }
+.status-checking{ color:#fef08a; border-color: rgba(234,179,8,.35); }
+
+.nav__links{ display:flex; gap:26px; }
+.nav__links a{
+  color:var(--muted);
+  text-decoration:none;
+  font-weight:600;
+  font-size:14.5px;
+  transition: color .15s ease;
+}
+.nav__links a:hover{ color:var(--ink); }
+
+/* -------- Hero -------- */
+.hero{
+  min-height: calc(100vh - 68px);
+  display:grid;
+  place-items:center;
+  padding: 64px 22px 96px;
+}
+.hero__content{ width:100%; max-width: 1200px; }
+.hero h1{
+  font-size: clamp(36px, 6vw, 64px);
+  line-height: 1.05;
+  margin: 0 0 18px;
+  font-weight: 800;
+  letter-spacing: .2px;
+  color: #ffffff;
+  text-shadow: 0 8px 30px rgba(0,0,0,.45);
+}
+.accent{
+  background: linear-gradient(120deg, var(--accent-from), var(--accent-to));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero__sub{
+  max-width: 720px;
+  color: var(--muted);
+  margin: 0 0 28px;
+  font-size: clamp(15px, 2.1vw, 18px);
+}
+
+/* Buttons */
+.btn{
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 14px 22px;
+  font-size: 15px;
+  transition: transform .1s ease, box-shadow .15s ease, filter .15s ease, background .15s ease;
+  text-decoration: none;
+  display: inline-flex; align-items:center; justify-content:center;
+}
+.btn--primary{
+  color:#fff;
+  background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+  box-shadow: 0 10px 30px rgba(124,58,237,.35);
+}
+.btn--primary:hover{
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+  box-shadow: 0 14px 40px rgba(124,58,237,.45);
+}
+.btn--outline{
+  color:#e8e9f2;
+  background: transparent;
+  border: 2px solid color-mix(in oklab, var(--accent-to) 60%, white 40%);
+  box-shadow: none;
+}
+.btn--outline:hover{
+  transform: translateY(-1px);
+  background: rgba(124,58,237,.08);
+}
+
+.hero__cta{ display:flex; gap:14px; flex-wrap:wrap; }
+
+@media (max-width: 600px){
+  .nav__links{ display:none; }
+}
+
+/* ---------------------------------
+   SplashCursor (if used)
+---------------------------------- */
+.splash-layer { position: fixed; inset: 0; z-index: 9999; pointer-events: none; }
+#fluid {
+  position: fixed; inset: 0; width: 100vw; height: 100vh;
+  display: block; pointer-events: none;
+  opacity: 0.6; mix-blend-mode: screen; filter: saturate(120%);
+}
+@media (prefers-reduced-motion: reduce) { #fluid { display: none !important; } }
+
+::selection {
+  background: color-mix(in oklab, var(--accent-from) 40%, var(--accent-to) 60%);
+  color: white;
+}
+
+.app, .container, .panel, #root { position: relative; z-index: 1; }
+
+/* Headings */
+.title-split{
+  display:flex; align-items:center; gap:10px;
+  margin: 0 0 14px;
+  font-weight: 800;
+  font-size: clamp(26px, 3.2vw, 34px);
+  color:#fff;
+}
+.section-title{
+  display:flex; align-items:center; gap:10px;
+  margin: 26px 0 10px;
+  font-weight: 700;
+  color:#fff;
+}
+
+/* Gradient shells + inputs */
+.field{
+  background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+  padding:2px;
+  border-radius:14px;
+  box-shadow: 0 8px 24px rgba(124,58,237,.18);
+}
+.input{
+  width:100%;
+  border:none; outline:none;
+  border-radius:12px;
+  padding:12px 14px;
+  background: rgba(10,12,22,.78);
+  color: var(--ink);
+}
+
+/* PRE blocks (Output/insights) */
+.pre-rose{
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background: rgba(10,12,22,.78);
+  color:#e8eaf6;
+  padding:16px; border-radius:12px;
+}
+
+/* File input */
+.file-rose::-webkit-file-upload-button,
+.file-rose::file-selector-button{
+  border:none; cursor:pointer; font-weight:700;
+  border-radius:999px; padding:10px 14px; margin-right:10px;
+  color:#fff;
+  background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+}
+.file-rose{ color:#cbd5e1; }
+
+.row{ display:flex; align-items:center; flex-wrap:wrap; gap:10px; }
+.muted-label{ color: var(--muted); font-weight:600; }
+
+/* ---------- THEMED <select> (open dropdown) ---------- */
+.select-themed {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: var(--ink);
+  background-color: rgba(12,14,24,.75);   /* closed control bg */
+  border-radius: 12px;
+}
+.select-themed:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--accent-to) 60%, white 40%) inset;
+}
+
+/* Opened list styling (supported in modern browsers) */
+.select-themed option {
+  background: #0b0b18;
+  color: var(--ink);
+}
+.select-themed option:hover,
+.select-themed option:checked {
+  background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+  color: #fff;
+}
+
+/* Hide old IE arrow */
+.select-themed::-ms-expand { display: none; }
+
+/* ===============================
+   LUNA PDF (scoped, append-only)
+   Will NOT affect other buttons/keys
+   =============================== */
+[data-luna="pdf"] .luna-search,
+[data-luna="pdf"] .luna-jump {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+[data-luna="pdf"] .luna-search-input,
+[data-luna="pdf"] .luna-jump-input {
+  width: 120px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  color: #fff;
+  outline: none;
+  transition: border-color .15s ease, background .15s ease;
+}
+[data-luna="pdf"] .luna-search-input::placeholder { color: rgba(255,255,255,.6); }
+
+[data-luna="pdf"] .luna-jump-input {
+  width: 64px;            /* compact cube */
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+[data-luna="pdf"] .luna-search-input:focus,
+[data-luna="pdf"] .luna-jump-input:focus {
+  border-color: rgba(255,255,255,.28);
+  background: rgba(255,255,255,.10);
+}
+
+[data-luna="pdf"] .luna-of {
+  color: #bfbfbf;
+  font-size: 12px;
+  user-select: none;
+}
+
+/* Reusable small button that won't clash with your existing .btn */
+[data-luna="pdf"] .luna-btn {
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.08);
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;
+  transition: transform .06s ease, background .15s ease, border-color .15s;
+}
+[data-luna="pdf"] .luna-btn:hover { background: rgba(255,255,255,.12); }
+[data-luna="pdf"] .luna-btn:active { transform: translateY(1px); }
+[data-luna="pdf"] .luna-btn:disabled { opacity: .45; cursor: default; }
+
+[data-luna="pdf"] .luna-hits {
+  color: #cfcfcf;
+  font-size: 12px;
+  margin-left: 4px;
+  user-select: none;
+}
+
+/* Text layer + highlights (overlay above canvas) */
+[data-luna="pdf"] .luna-text-layer {
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+[data-luna="pdf"] .luna-hl {
+  position: absolute;
+  background: rgba(255, 230, 0, 0.35);
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px rgba(255,220,0,.6) inset;
+}
+
+/* Optional: keep inputs tidy in tight headers/footers */
+@media (max-width: 720px) {
+  [data-luna="pdf"] .luna-search-input { width: 110px; }
+  [data-luna="pdf"] .luna-jump-input { width: 56px; }
+}
+/* Allow text selection inside the PDF viewer area */
+.pdf-viewer-wrapper,
+.pdf-viewer-wrapper * {
+  -webkit-user-select: text !important;
+  user-select: text !important;
+}
+/* keep snippet text bright */
+.why-pre { color: #fff; }
+
+/* error color stays consistent */
+.snippet-error { color: #ffb4b4; }
+.brand__badge {
+  display: none; /* Or delete this class */
+}
+
+
+/* Target dropdown options on hover/focus */
+select option:hover,
+select option:focus,
+select option:checked {
+  background-color: #ec4899 !important; /* pink */
+  color: white !important;              /* text stays readable */
+}

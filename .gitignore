@@ -1,0 +1,23 @@
+# Node/React
+**/node_modules/
+frontend/build/
+
+# Python
+backend/.venv/
+backend/__pycache__/
+**/*.pyc
+
+# Env & secrets
+.env
+backend/.env
+credentials/
+*.pem
+*.p12
+*.key
+*.crt
+*.pfx
+!backend/.env.example
+
+# OS junk
+.DS_Store
+Thumbs.db

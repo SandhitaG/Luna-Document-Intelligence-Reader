@@ -1,0 +1,9 @@
+* text=auto
+*.{js,jsx,ts,tsx,css,scss,md,html,json,yml,yaml,sh} eol=lf
+*.bat eol=crlf
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.gif -text
+*.pdf -text
+*.zip -text
