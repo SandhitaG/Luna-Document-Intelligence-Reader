@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "input_documents": [
+      "South of France - Cities.pdf",
+      "South of France - Cuisine.pdf",
+      "South of France - History.pdf",
+      "South of France - Restaurants and Hotels.pdf",
+      "South of France - Things to Do.pdf",
+      "South of France - Tips and Tricks.pdf",
+      "South of France - Traditions and Culture.pdf"
+    ],
+    "persona": "Travel Planner",
+    "job_to_be_done": "Plan a trip of 4 days for a group of 10 college friends.",
+    "processing_timestamp": "2025-08-12T19:02:58Z"
+  },
+  "extracted_sections": [
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 1,
+      "section_title": "The Ultimate South of France Travel Companion: Your Comprehensive Guide to Packing,",
+      "importance_rank": 1
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 1,
+      "section_title": "Planning, and Exploring",
+      "importance_rank": 2
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 2,
+      "section_title": "General Packing Tips and Tricks",
+      "importance_rank": 3
+    },
+    {
+      "document": "South of France - History.pdf",
+      "page_number": 1,
+      "section_title": "A Historical Journey Through the South of France",
+      "importance_rank": 4
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 4,
+      "section_title": "Packing for Adults",
+      "importance_rank": 5
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 2,
+      "section_title": "Travel Tips",
+      "importance_rank": 6
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "page_number": 1,
+      "section_title": "A Culinary Journey Through the South of France",
+      "importance_rank": 7
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 6,
+      "section_title": "Packing for Kids",
+      "importance_rank": 8
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 8,
+      "section_title": "Tips and Tricks for Packing",
+      "importance_rank": 9
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 3,
+      "section_title": "Key Attractions",
+      "importance_rank": 10
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 1,
+      "section_title": "Comprehensive Guide to Restaurants and Hotels in the South of France",
+      "importance_rank": 11
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 3,
+      "section_title": "Packing for All Seasons",
+      "importance_rank": 12
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 4,
+      "section_title": "Verdon Gorge: Known as the \"Grand Canyon of Europe,\" oﬀering spectacular hiking",
+      "importance_rank": 13
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Wine Tasting",
+      "importance_rank": 14
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 7,
+      "section_title": "Le Pavillon Ledoyen (Paris): A three-Michelin-starred restaurant oﬀering a variety of",
+      "importance_rank": 15
+    },
+    {
+      "document": "South of France - History.pdf",
+      "page_number": 6,
+      "section_title": "Key Historical Sites in Carcassonne",
+      "importance_rank": 16
+    },
+    {
+      "document": "South of France - History.pdf",
+      "page_number": 9,
+      "section_title": "Key Historical Sites in Aix-en-Provence",
+      "importance_rank": 17
+    },
+    {
+      "document": "South of France - Traditions and Culture.pdf",
+      "page_number": 4,
+      "section_title": "Pottery and Ceramics",
+      "importance_rank": 18
+    }
+  ],
+  "sub_section_analysis": [
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 0,
+      "refined_text": "Whether you're traveling solo, with kids, or in a group, this guide will help you make the most of your trip. This guide covers everything from packing essentials to travel tips, catering to all seasons and various activities."
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 1,
+      "refined_text": "Travel-Sized Toiletries: Bring travel-sized toiletries to save space and comply with airline regulations. Travel Pillow and Blanket: A compact travel pillow and blanket can make long flights or train rides more comfortable."
+    },
+    {
+      "document": "South of France - History.pdf",
+      "page_number": 0,
+      "refined_text": "This guide will take you through the histories of major cities, famous historical sites, and other points of interest to help you plan an enriching and unforgettable trip. Introduction The South of France, renowned for its picturesque landscapes, charming villages, and stunning coastline, is also steeped in history."
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 3,
+      "refined_text": "Bring a travel adapter if needed Active Wear: If you plan on hiking or outdoor activities, pack activewear like leggings, shorts, and moisture-wicking tops."
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 1,
+      "refined_text": "Learning a few basic French phrases can enhance your travel experience. Best Time to Visit: The best time to visit the South of France is during the spring (April to June) and fall (September to October) when the weather is pleasant, and the tourist crowds are smaller."
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "page_number": 0,
+      "refined_text": "This guide will take you through the diﬀerent types of food, famous dishes, must-visit restaurants, renowned wine regions, and the types of wines they produce to help you plan an unforgettable culinary adventure. The region's cuisine is a delightful blend of Mediterranean flavors, fresh ingredients, and traditional recipes passed down through generations."
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 5,
+      "refined_text": "Swimwear: Swimsuits and cover-ups for beach or pool days. Snacks: Bring a variety of snacks for travel and outings."
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 7,
+      "refined_text": "Additional Tips: Pack a small travel umbrella, a reusable shopping bag, and a portable phone charger. Wear Bulky Items: Wear bulky items like coats or boots during travel to save suitcase space."
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 2,
+      "refined_text": "Local Experiences Boat Trip to the Calanques: Take a boat trip to the Calanques, a series of stunning limestone cliﬀs and coves along the coast. MuCEM (Museum of European and Mediterranean Civilizations): This modern museum explores the cultural history of the Mediterranean region through a variety of exhibits and interactive displays."
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 0,
+      "refined_text": "Whether you're looking for budget-friendly options, family-friendly spots, upscale dining, or luxurious experiences, this guide will help you find the perfect restaurants and hotels for your trip. Introduction The South of France, known for its stunning landscapes, rich cultural heritage, and exquisite cuisine, is a dream destination for travelers."
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 2,
+      "refined_text": "Additional Tips: Spring can be unpredictable, so be prepared for both sunny and rainy days. Additional Tips: The South of France can get very hot in the summer, so stay hydrated and seek shade during peak sun hours."
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 3,
+      "refined_text": "Dordogne River: Enjoy a leisurely canoe trip, passing by medieval castles and charming villages. Luberon Regional Park: Explore picturesque villages and rolling hills, famous for lavender fields and vineyards."
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 4,
+      "refined_text": "Bordeaux: Take a day trip to the world-renowned wine region and visit its prestigious châteaux. Cooking Classes Provence: Learn to prepare traditional dishes like ratatouille and bouillabaisse."
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 6,
+      "refined_text": "Le Pré Catelan (Paris): A three-Michelin-starred restaurant oﬀering a variety of dishes made with fresh, local ingredients. The elegant setting and exceptional service make it a top choice for fine dining."
+    },
+    {
+      "document": "South of France - History.pdf",
+      "page_number": 5,
+      "refined_text": "Hoardings: Carcassonne was the first fortress to use wooden hoardings during sieges, allowing defenders to shoot arrows and drop projectiles on attackers below10. Cité de Carcassonne: This medieval fortress is a UNESCO World Heritage site and one of the most impressive examples of medieval architecture in Europe."
+    },
+    {
+      "document": "South of France - History.pdf",
+      "page_number": 8,
+      "refined_text": "Saint-Sauveur Cathedral: This cathedral, built between the 5th and 17th centuries, features a mix of architectural styles, including Romanesque, Gothic, and Baroque. Thermal Springs: Aix-en-Provence was originally founded as a Roman spa town due to its thermal springs, which are still in use today at the Thermes Sextius."
+    },
+    {
+      "document": "South of France - Traditions and Culture.pdf",
+      "page_number": 3,
+      "refined_text": "Pilgrims come to Lourdes to visit the Sanctuary of Our Lady of Lourdes, where the Virgin Mary is said to have appeared to a young girl in 1858. The South of France has a rich tradition of pottery and ceramics, with towns like Vallauris and Biot being renowned for their craftsmanship."
+    }
+  ]
+}
