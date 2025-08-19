@@ -41,8 +41,8 @@ Document_Intelligence_Reader/
 │  │     │  ├─ sub_section_analysis.py
 │  │     │  ├─ snippets.py
 │  │     │  ├─ approach_explain.py
-│  │     │  
-│  │     ├─ data/
+│  │  │  ├─input/
+│  │  │  ├─output/
 │  │     ├─ requirements.txt
 │  │     └─ run.sh
 │  ├─ insights/
