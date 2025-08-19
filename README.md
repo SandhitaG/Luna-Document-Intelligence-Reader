@@ -114,8 +114,8 @@ Open http://localhost:8080
 
 - The image installs espeak-ng and ffmpeg so local TTS works out of the box.
 - You can switch to gcp or azure TTS by setting the env vars below.
-- Local Development (optional)
 
+## Local Development (optional)
 # Backend
 
 cd backend
