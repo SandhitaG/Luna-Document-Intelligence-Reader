@@ -67,7 +67,8 @@ Document_Intelligence_Reader/
 │  ├─requirements.txt
 │
 ├─ frontend/
-│  ├─ build/                          # created by `npm run build` (copied to /frontend_dist)
+│  ├─ build/
+│     ├─node_modules                       # created by `npm run build` (copied to /frontend_dist)
 │  ├─ public/
 │  ├─index.html
 │  ├─src/
