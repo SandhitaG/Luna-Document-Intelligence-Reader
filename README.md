@@ -120,12 +120,12 @@ Open http://localhost:8080
 
 ## Local Development (optional)
 - # Backend
-cd backend
-python controller_app.py
+  - cd backend
+  - python controller_app.py
 
 - # Frontend
-cd frontend 
-npm start
+  - cd frontend 
+  - npm start
 
 API Endpoints
 
