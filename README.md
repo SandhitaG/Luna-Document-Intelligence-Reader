@@ -87,9 +87,9 @@ Document_Intelligence_Reader/
 │     ├─ utils/helpers.jsx
 │     ├─ App.jsx
 │     └─ index.js
-├─ .env
-├─ package-lock.json
-├─ package.json
+│   ├─ .env
+│   ├─ package-lock.json
+│   ├─ package.json
 ├─ Dockerfile                         # multi-stage: build frontend → slim Python runtime
 └─ README.md
 ```
