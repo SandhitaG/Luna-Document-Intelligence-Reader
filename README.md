@@ -22,14 +22,14 @@ Document_Intelligence_Reader/
 │  ├─ requirements.txt
 │  ├─ Adobe1ab/
 │  │  ├─ Adobe1a/
-│  │  │  ├─ extractor/
-│  │  │  │  ├─ input/                # upload staging (runtime)
-│  │  │  │  └─ output/  
-          ├─ classifier.py            # 1A outputs (runtime)
-│  │  │  ├─ extract_outline.py
-│  │  │  ├─ ocr.py
-│  │  │  ├─ parser.py
-│  │  │  └─ (other helpers…)
+│  │  │  ├─input/
+│  │  │  ├─output/
+│  │  │  ├─ extractor/ 
+│  │  │   ├─ classifier.py            # 1A outputs (runtime)
+│  │  │   ├─ extract_outline.py
+│  │  │   ├─ ocr.py
+│  │  │   ├─ parser.py
+│  │  │   └─ (other helpers…)
 │  │  └─ Adobe1b/
 │  │     ├─ src/
 │  │     │  ├─generate_output.py
