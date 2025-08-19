@@ -116,14 +116,11 @@ Open http://localhost:8080
 - You can switch to gcp or azure TTS by setting the env vars below.
 
 ## Local Development (optional)
-# Backend
-
+- # Backend
 cd backend
-
 python controller_app.py
 
-# Frontend
-
+- # Frontend
 cd frontend 
 npm start
 
