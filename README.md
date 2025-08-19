@@ -63,6 +63,7 @@ Document_Intelligence_Reader/
 │  ├─chat_with_llm.py
 │  ├─controller_app.py
 │  ├─gemini_helper.py
+│  ├─init.py
 │  ├─requirements.txt
 │
 ├─ frontend/
