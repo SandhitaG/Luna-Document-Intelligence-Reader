@@ -16,7 +16,7 @@ This repo includes a React frontend, a Flask backend, an embeddings-backed “Co
 - TTS providers: Local (espeak+ffmpeg), Google Cloud TTS, Azure (Speech or AOAI TTS).Automatic fallbacks keep audio generation working.
   
 ```bash
-repo-root/
+Document_Intelligence_Reader/
 ├─ backend/
 │  ├─ controller_app.py              # Flask API (serves built frontend too)
 │  ├─ requirements.txt
